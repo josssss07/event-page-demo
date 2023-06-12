@@ -63,6 +63,7 @@
     <style>
       .dept-card-container {
         display: flex;
+        flex-direction: column;
         width: 100%;
         align-content: space-evenly;
         justify-content: space-evenly;
@@ -71,7 +72,7 @@
       .deptCard {
         font-family: Arial, Helvetica, sans-serif;
         user-select: none;
-        max-width: 620px;
+        max-width: 1000px;
         margin: 2rem auto;
         border: 1px solid #ffffff22;
         background-color: #282c34;
@@ -82,8 +83,8 @@
         );
         box-shadow: 0 7px 20px 5px #00000088;
         border-radius: 0.7rem;
-        backdrop-filter: blur(7px);
-        -webkit-backdrop-filter: blur(7px);
+        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
         overflow: hidden;
         transition: 0.5s all;
         text-align: center;
@@ -98,6 +99,7 @@
         color: white;
         font-weight: 400;
         /* height: 50px; */
+        z-index: 99;
       }
 
       .deptCard .main {
@@ -110,11 +112,14 @@
       }
       .deptCard .main .deptIcon {
         border-radius: 0.5rem;
-        max-width: 100%;
-        height: 250px;
+        width: 100px;
+        height: auto;
         object-fit: cover;
+        margin: auto;
+        filter: invert();
       }
       .deptCard .main .description {
+        z-index: 99;
         margin: 0.5rem 0;
         color: #a89ec9;
         font-family: "Poppins", sans-serif;
@@ -122,59 +127,6 @@
         text-transform: none;
       }
 
-      .deptCard .main .tokenInfo {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-      .deptCard .main .tokenInfo .price {
-        display: flex;
-        align-items: center;
-        color: #ee83e5;
-        font-weight: 700;
-      }
-      .deptCard .main .tokenInfo .price ins {
-        margin-left: -0.3rem;
-        margin-right: 0.5rem;
-      }
-      .deptCard .main .tokenInfo .duration {
-        display: flex;
-        align-items: center;
-        color: #a89ec9;
-        margin-right: 0.2rem;
-      }
-      .deptCard .main .tokenInfo .duration ins {
-        margin: 0.5rem;
-        margin-bottom: 0.4rem;
-      }
-      .deptCard .main .creator {
-        display: flex;
-        align-items: center;
-        margin-top: 0.2rem;
-        margin-bottom: -0.3rem;
-      }
-      .deptCard .main .creator ins {
-        color: #a89ec9;
-        text-decoration: none;
-      }
-      .deptCard .main .creator .wrapper {
-        display: flex;
-        align-items: center;
-        border: 1px solid #ffffff22;
-        padding: 0.3rem;
-        margin: 0;
-        margin-right: 0.5rem;
-        border-radius: 100%;
-        box-shadow: inset 0 0 0 4px #000000aa;
-      }
-      .deptCard .main .creator .wrapper img {
-        border-radius: 100%;
-        border: 1px solid #ffffff22;
-        width: 2rem;
-        height: 2rem;
-        object-fit: cover;
-        margin: 0;
-      }
       .deptCard ::before {
         position: fixed;
         content: "";
@@ -189,20 +141,9 @@
         border: 1px solid #ffffff44;
         box-shadow: 0 7px 50px 10px #000000aa;
         transform: scale(1.015);
-        /* backface-visibility: hidden; */
         transform: perspective(1px) translateZ(0);
         backface-visibility: hidden;
         filter: brightness(1.3);
-      }
-      .bg {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-      .bg h1 {
-        font-size: 20rem;
-        filter: opacity(0.5);
       }
 
       @media (max-width: 1270px) {
@@ -211,6 +152,9 @@
         }
         .deptCard {
           max-width: 80%;
+        }
+        .deptIcon{
+          width: 80px;
         }
       }
 
@@ -373,7 +317,7 @@
           <div class="main">
             <img
               class="deptIcon"
-              src="https://images.unsplash.com/photo-1621075160523-b936ad96132a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+              src="./assets/depticon1.png"
               alt="deptCard"
             />
             <h2>Western Performing Arts</h2>
@@ -400,7 +344,7 @@
           <div class="main">
             <img
               class="deptIcon"
-              src="https://images.unsplash.com/photo-1621075160523-b936ad96132a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+              src="./assets/depticon1.png"
               alt="deptCard"
             />
             <h2>Indian Performing Arts</h2>
@@ -421,14 +365,14 @@
             </button>
           </div>
         </div>
-      </div>
+        <!-- </div>
 
-      <div class="dept-card-container">
+      <div class="dept-card-container"> -->
         <div class="deptCard">
           <div class="main">
             <img
               class="deptIcon"
-              src="https://images.unsplash.com/photo-1621075160523-b936ad96132a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+              src="./assets/depticon1.png"
               alt="deptCard"
             />
             <h2>Fine Arts</h2>
@@ -453,7 +397,7 @@
           <div class="main">
             <img
               class="deptIcon"
-              src="https://images.unsplash.com/photo-1621075160523-b936ad96132a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+              src="./assets/depticon1.png"
               alt="deptCard"
             />
             <h2>Entertainment, Theatricals and Contests</h2>
@@ -475,14 +419,14 @@
             </button>
           </div>
         </div>
-      </div>
+        <!-- </div>
 
-      <div class="dept-card-container">
+      <div class="dept-card-container"> -->
         <div class="deptCard">
           <div class="main">
             <img
               class="deptIcon"
-              src="https://images.unsplash.com/photo-1621075160523-b936ad96132a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+              src="./assets/depticon1.png"
               alt="deptCard"
             />
             <h2>Crossover</h2>
@@ -509,7 +453,7 @@
           <div class="main">
             <img
               class="deptIcon"
-              src="https://images.unsplash.com/photo-1621075160523-b936ad96132a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+              src="./assets/depticon1.png"
               alt="deptCard"
             />
             <h2>Literary Arts</h2>
