@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="robots" content="noindex" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta name="author" content="Malhar Computers Team" />
+    <meta
+      name="keywords"
+      content="college fest mumbai,
+    st.xavier's college malhar,
+    annual college fest,
+    eye of the storm,
+    malhar 2023,
+    mumbai festivals, college festivals in Mumbai,
+    live performances, mumbai college fest, entertainment and fun, malhar fest"
+    />
+    <meta
+      name="description"
+      content="Experience the calm amidst electrifying chaos at Malhar 2023 - Eye of the Storm, the ultimate college fest at St.Xavier's College, Mumbai. Get ready for thrilling events, amazing performances, and unforgettable memories."
+    />
+    <meta name="og:title" content="Malhar 2023 - Eye Of The Storm" />
+    <meta
+      name="og:description"
+      content="Experience the calm amidst electrifying chaos at Malhar 2023 - Eye of the Storm, the ultimate college fest at St.Xavier's College, Mumbai."
+    />
+    <meta name="og:url" content="https://www.facebook.com/Malharfest" />
+    <meta name="og:site_name" content="https://www.facebook.com/Malharfest" />
+    <meta name="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://malharfest.in/landing-page/assets/finalfinalfinal.png"
+    />
+
+    <title>Malhar Fest 2023 - Eye of the Storm</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/favicon/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .dept-card-container {
+        display: flex;
+        width: 100%;
+        align-content: space-between;
+        justify-content: space-between;
+        text-align: center;
+      }
+      .deptCard {
+        font-family: Arial, Helvetica, sans-serif;
+        user-select: none;
+        max-width: 400px;
+        margin: 2rem auto;
+        border: 1px solid #ffffff22;
+        background-color: #282c34;
+        background: linear-gradient(
+          0deg,
+          #282c34 0%,
+          rgba(17, 0, 32, 0.5) 100%
+        );
+        box-shadow: 0 7px 20px 5px #00000088;
+        border-radius: 0.7rem;
+        backdrop-filter: blur(7px);
+        -webkit-backdrop-filter: blur(7px);
+        overflow: hidden;
+        transition: 0.5s all;
+        text-align: center;
+      }
+
+      .deptCard ins {
+        text-decoration: none;
+      }
+
+      .deptCard h2 {
+        font-family: "Myriad Pro Regular", serif;
+        color: white;
+        font-weight: 400;
+        /* height: 50px; */
+      }
+
+      .deptCard .main {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        padding: 1rem;
+        text-align: center;
+        margin: auto;
+      }
+      .deptCard .main .deptIcon {
+        border-radius: 0.5rem;
+        max-width: 100%;
+        height: 250px;
+        object-fit: cover;
+      }
+      .deptCard .main .description {
+        margin: 0.5rem 0;
+        color: #a89ec9;
+        font-family: "Poppins", sans-serif;
+        text-decoration: none;
+        text-transform: none;
+      }
+
+      .deptCard .main .tokenInfo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .deptCard .main .tokenInfo .price {
+        display: flex;
+        align-items: center;
+        color: #ee83e5;
+        font-weight: 700;
+      }
+      .deptCard .main .tokenInfo .price ins {
+        margin-left: -0.3rem;
+        margin-right: 0.5rem;
+      }
+      .deptCard .main .tokenInfo .duration {
+        display: flex;
+        align-items: center;
+        color: #a89ec9;
+        margin-right: 0.2rem;
+      }
+      .deptCard .main .tokenInfo .duration ins {
+        margin: 0.5rem;
+        margin-bottom: 0.4rem;
+      }
+      .deptCard .main .creator {
+        display: flex;
+        align-items: center;
+        margin-top: 0.2rem;
+        margin-bottom: -0.3rem;
+      }
+      .deptCard .main .creator ins {
+        color: #a89ec9;
+        text-decoration: none;
+      }
+      .deptCard .main .creator .wrapper {
+        display: flex;
+        align-items: center;
+        border: 1px solid #ffffff22;
+        padding: 0.3rem;
+        margin: 0;
+        margin-right: 0.5rem;
+        border-radius: 100%;
+        box-shadow: inset 0 0 0 4px #000000aa;
+      }
+      .deptCard .main .creator .wrapper img {
+        border-radius: 100%;
+        border: 1px solid #ffffff22;
+        width: 2rem;
+        height: 2rem;
+        object-fit: cover;
+        margin: 0;
+      }
+      .deptCard ::before {
+        position: fixed;
+        content: "";
+        box-shadow: 0 0 100px 40px #ffffff08;
+        top: -10%;
+        left: -100%;
+        transform: rotate(-45deg);
+        height: 60rem;
+        transition: 0.7s all;
+      }
+      .deptCard:hover {
+        border: 1px solid #ffffff44;
+        box-shadow: 0 7px 50px 10px #000000aa;
+        transform: scale(1.015);
+        /* backface-visibility: hidden; */
+        transform: perspective(1px) translateZ(0);
+        backface-visibility: hidden;
+        filter: brightness(1.3);
+      }
+      .bg {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .bg h1 {
+        font-size: 20rem;
+        filter: opacity(0.5);
+      }
+
+      @media (max-width: 1270px) {
+        .dept-card-container {
+          flex-direction: column;
+        }
+        .deptCard {
+          max-width: 80%;
+        }
+      }
+
+      .btn {
+        background: hsl(var(--hue), 98%, 80%);
+        border: none;
+        border-radius: 7px;
+        cursor: pointer;
+        color: black;
+        font-family: "Myriad Pro Regular", sans-serif;
+        font-size: 1rem;
+        letter-spacing: 0.05em;
+        overflow: hidden;
+        padding: 1rem 1rem;
+        min-height: 2rem;
+        position: relative;
+        align-self: center;
+        width: 200px;
+        margin: 20px;
+      }
+
+      .btn--purple {
+        --hue: 244;
+      }
+
+      .btn:active,
+      .btn:focus {
+        outline: 3px solid hsl(calc(var(--hue) + 90), 98%, 80%);
+      }
+      .btn + .btn {
+        margin-top: 2.5em;
+      }
+      .btn__txt {
+        position: relative;
+        z-index: 2;
+      }
+      .btn__bg {
+        background: hsl(var(--hueBg), 98%, 80%);
+        border-radius: 50%;
+        display: block;
+        height: 0;
+        left: 50%;
+        margin: -50% 0 0 -50%;
+        padding-top: 100%;
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        transform: scale(0);
+        transform-origin: 50% 50%;
+        transition: transform 0.175s cubic-bezier(0.5, 1, 0.89, 1);
+        z-index: 1;
+      }
+      .btn__bg:nth-of-type(1) {
+        --hueBg: calc(var(--hue) - 90);
+        transition-delay: 0.1725s;
+      }
+      .btn__bg:nth-of-type(2) {
+        --hueBg: calc(var(--hue) - 180);
+        transition-delay: 0.115s;
+      }
+      .btn__bg:nth-of-type(3) {
+        --hueBg: calc(var(--hue) - 270);
+        transition-delay: 0.0575s;
+      }
+      .btn__bg:nth-of-type(4) {
+        --hueBg: calc(var(--hue) - 360);
+        transition-delay: 0s;
+      }
+      .btn:hover .btn__bg,
+      .btn:focus .btn__bg,
+      .btn:active .btn__bg {
+        transform: scale(1.5);
+        transition: transform 0.35s cubic-bezier(0.11, 0, 0.5, 0);
+      }
+      .btn:hover .btn__bg:nth-of-type(1),
+      .btn:focus .btn__bg:nth-of-type(1),
+      .btn:active .btn__bg:nth-of-type(1) {
+        transition-delay: 0.115s;
+      }
+      .btn:hover .btn__bg:nth-of-type(2),
+      .btn:focus .btn__bg:nth-of-type(2),
+      .btn:active .btn__bg:nth-of-type(2) {
+        transition-delay: 0.23s;
+      }
+      .btn:hover .btn__bg:nth-of-type(3),
+      .btn:focus .btn__bg:nth-of-type(3),
+      .btn:active .btn__bg:nth-of-type(3) {
+        transition-delay: 0.345s;
+      }
+      .btn:hover .btn__bg:nth-of-type(4),
+      .btn:focus .btn__bg:nth-of-type(4),
+      .btn:active .btn__bg:nth-of-type(4) {
+        transition-delay: 0.46s;
+      }
+    </style>
+  </head>
+
+  <body id="body">
+    <h1 class="hh" aria-hidden="true">Malhar Fest 2023 - Eye Of The Storm</h1>
+
+    <nav id="navbar">
+      <div class="nav-container">
+        <button class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="menu">
+          <div class="nav-item">
+            <a
+              aria-label="Link to Contact Us Page"
+              href="../pages/Contact/index.html"
+              >Contact</a
+            >
+          </div>
+          <div class="nav-item">
+            <a
+              href="http://linktr.ee/malharfest"
+              aria-label="Link to Announcements Page on Linktree"
+              >Announcements</a
+            >
+          </div>
+          <div class="nav-item">
+            <a
+              href="https://blog.malharfest.in"
+              aria-label="Link to Announcements Page on Linktree"
+              >Blog</a
+            >
+          </div>
+        </div>
+
+        <div class="mobile-menu">
+          <a
+            href="../pages/Contact/index.html"
+            aria-label="Link to Contact Us Page"
+            >Contact</a
+          >
+          <a
+            href="http://linktr.ee/malharfest"
+            aria-label="Link to Announcements Page on Linktree"
+            >Announcements</a
+          >
+          <a
+            href="https://blog.malharfest.in"
+            aria-label="Link to Official Malhar Blog"
+            >Blog</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <div class="page-load"></div>
+
+    <div class="main-container fadeIn" id="main-container">
+      <h1 class="page-header">Events</h1>
+
+      <div class="dept-card-container">
+        <div class="deptCard">
+          <div class="main">
+            <img
+              class="deptIcon"
+              src="https://images.unsplash.com/photo-1621075160523-b936ad96132a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+              alt="deptCard"
+            />
+            <h2>Western Performing Arts</h2>
+            <p class="description">
+              Welcome to the bright side! Overflowing with energy and
+              expression, here&#39;s introducing a riot of unparalleled talent:
+              The World Performing Arts Department. From lyrics to gimmicks, to
+              soulful pirouettes, our events aim to reflect the perfect melange
+              of innovation and emotion. Turn up that bass, grab your headphones
+              and get your groove on because it&#39;s time to hop on to this
+              expedition of unconstrained, limitless creativity.
+            </p>
+            <button type="button" class="btn btn--purple">
+              <span class="btn__txt">View Events</span>
+              <i class="btn__bg" aria-hidden="true"></i>
+              <i class="btn__bg" aria-hidden="true"></i>
+              <i class="btn__bg" aria-hidden="true"></i>
+              <i class="btn__bg" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="deptCard">
+          <div class="main">
+            <img
+              class="deptIcon"
+              src="https://images.unsplash.com/photo-1621075160523-b936ad96132a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+              alt="deptCard"
+            />
+            <h2>Indian Performing Arts</h2>
+            <p class="description">
+              Indian Performing Arts believes in staying desi at heart and
+              keeping alive the dynamic and multi-hued culture and art forms of
+              our country. The events will be no less than a powerhouse of
+              talent from magical musical performances, and dazzling dances to
+              eye-opening streetplays. Keep the hearts beating cause it's time
+              for the desi beat!
+            </p>
+            <button type="button" class="btn btn--purple">
+              <span class="btn__txt">View Events</span>
+              <i class="btn__bg" aria-hidden="true"></i>
+              <i class="btn__bg" aria-hidden="true"></i>
+              <i class="btn__bg" aria-hidden="true"></i>
+              <i class="btn__bg" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="deptCard">
+          <div class="main">
+            <img
+              class="deptIcon"
+              src="https://images.unsplash.com/photo-1621075160523-b936ad96132a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+              alt="deptCard"
+            />
+            <h2>Fine Arts</h2>
+            <p class="description">
+              Fine Arts believes in taking the ordinary and turning it into
+              something unique. With mesmerising events that will cross all
+              limitations of creativity and an art lounge that will bring out
+              your inner Dalí, the FA department is a safe space for people to
+              express themselves using art as the medium. Come immerse yourself
+              in our artworks and enter a wonderful realm of colourful concepts.
+            </p>
+            <button type="button" class="btn btn--purple">
+              <span class="btn__txt">View Events</span>
+              <i class="btn__bg" aria-hidden="true"></i>
+              <i class="btn__bg" aria-hidden="true"></i>
+              <i class="btn__bg" aria-hidden="true"></i>
+              <i class="btn__bg" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="dept-card-container">
+        <div class="deptCard">
+          <div class="main">
+            <img
+              class="deptIcon"
+              src="https://images.unsplash.com/photo-1621075160523-b936ad96132a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+              alt="deptCard"
+            />
+            <h2>Entertainment, Theatricals and Contests</h2>
+            <p class="description">
+              Perfunctorily call us dysfunctional,malfunctional or even
+              unfunctional, you can&#39;t really miss the &#39;fun&#39; in it.
+              Here at ETC, we don&#39;t believe in fitting in. In fact, many
+              people read ETC as etcetera, which is perfect, because why define
+              when you can just be! If you&#39;re someone who&#39;s fed up with
+              the mainstream, quirky, vivacious, funny, etcetera, this is just
+              the place for you.
+            </p>
+            <button type="button" class="btn btn--purple">
+              <span class="btn__txt">View Events</span>
+              <i class="btn__bg" aria-hidden="true"></i>
+              <i class="btn__bg" aria-hidden="true"></i>
+              <i class="btn__bg" aria-hidden="true"></i>
+              <i class="btn__bg" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+        <div class="deptCard">
+          <div class="main">
+            <img
+              class="deptIcon"
+              src="https://images.unsplash.com/photo-1621075160523-b936ad96132a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+              alt="deptCard"
+            />
+            <h2>Crossover</h2>
+            <p class="description">
+              Malhar is about many aspects, like cooperation, collaboration and
+              a collected set of efforts striving towards a common goal.
+              Crossover events fit into all the above mentioned adjectives and
+              is best defined as a fusion of talents. The Crossover events carry
+              forward the legacy of Malhar by proving that despite having
+              different departments, there is nothing better than when they come
+              together to create a spectacle.
+            </p>
+            <button type="button" class="btn btn--purple">
+              <span class="btn__txt">View Events</span>
+              <i class="btn__bg" aria-hidden="true"></i>
+              <i class="btn__bg" aria-hidden="true"></i>
+              <i class="btn__bg" aria-hidden="true"></i>
+              <i class="btn__bg" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="deptCard">
+          <div class="main">
+            <img
+              class="deptIcon"
+              src="https://images.unsplash.com/photo-1621075160523-b936ad96132a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+              alt="deptCard"
+            />
+            <h2>Literary Arts</h2>
+            <p class="description">
+              Is binge-watching quiz shows like Jeopardy and Million Pound Drop
+              one of your favourite hobbies? Have you ever transcended space and
+              time to enter different literary universes? Literary Arts is the
+              hub of all things creative, witty, and spontaneous. "I envision a
+              place where creativity sings, and expression gives you wings".
+              Well, if that is the case, Welcome to your safe space.
+            </p>
+            <button type="button" class="btn btn--purple">
+              <span class="btn__txt">View Events</span>
+              <i class="btn__bg" aria-hidden="true"></i>
+              <i class="btn__bg" aria-hidden="true"></i>
+              <i class="btn__bg" aria-hidden="true"></i>
+              <i class="btn__bg" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./nav.js"></script>
+  </body>
+</html>
