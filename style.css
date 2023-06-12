@@ -42,7 +42,7 @@ body {
   -webkit-animation-delay: 4s;
   -moz-animation-delay: 4s;
   animation-delay: 4s;
-  animation: fadeInAnimation ease 8s;
+  animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
@@ -221,8 +221,8 @@ nav {
   align-items: center;
   min-width: 100%;
   min-height: fit-content;
-  -webkit-animation-duration: 2s;
-  animation-duration: 5s;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
   animation-fill-mode: both;
   -webkit-animation-fill-mode: both;
   margin: auto;
