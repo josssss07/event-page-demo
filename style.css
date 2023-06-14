@@ -293,3 +293,170 @@ img {
     opacity: 1;
   }
 }
+
+
+
+@keyframes fly {
+  100% {
+    transform: rotate(2turn) translate(200px) rotate(-2turn);
+    -webkit-transform: rotate(2turn) translate(200px) rotate(-2turn);
+    -moz-transform: rotate(2turn) translate(200px) rotate(-2turn);
+    -ms-transform: rotate(2turn) translate(200px) rotate(-2turn);
+    -o-transform: rotate(2turn) translate(200px) rotate(-2turn);
+}
+}
+@keyframes flyPlus {
+  100% {
+    transform: rotate(-2turn) translate(200px) rotate(2turn);
+    -webkit-transform: rotate(-2turn) translate(200px) rotate(2turn);
+    -moz-transform: rotate(-2turn) translate(200px) rotate(2turn);
+    -ms-transform: rotate(-2turn) translate(200px) rotate(2turn);
+    -o-transform: rotate(-2turn) translate(200px) rotate(2turn);
+}
+}
+
+.animated .one {
+  border-radius: 100%;
+  width: 900px;
+  height: 900px;
+  top: 15;
+  right: 400;
+  background-color: #a960ee;
+  left: -180px;
+  top: -7000px;
+  z-index: 1;
+  animation: fly 18s linear infinite;
+  transform: rotate(0) translate(89px) rotate(0);
+  filter: blur(90px);
+  opacity: 0.4;
+  -webkit-filter: blur(50px);
+  
+}
+
+.animated .two {
+  border-radius: 100%;
+  width:850px;
+  height: 650px;
+  bottom: -80px;
+  right: -100px;
+  background-color: #66127f;
+  animation: flyPlus 17s linear infinite;
+  -webkit-animation: flyPlus 17s linear infinite;
+  transform: rotate(0) translate(200px) rotate(0);
+  -webkit-transform: rotate(0) translate(200px) rotate(0);
+  -moz-transform: rotate(0) translate(200px) rotate(0);
+  -ms-transform: rotate(0) translate(200px) rotate(0);
+  -o-transform: rotate(0) translate(200px) rotate(0);
+  filter: blur(90px);
+  opacity: 0.4;
+  -webkit-filter: blur(50px);
+  position: absolute;
+}
+
+
+
+.animated .three {
+  border-radius: 100%;
+  width: 900px;
+  height: 880px;
+  bottom: -90px;
+  right: -100px;
+  background-color: #5f20b8;
+  animation: flyPlus 90s linear infinite;
+  -webkit-animation: flyPlus 10s linear infinite;
+  transform: rotate(0) translate(200px) rotate(0);
+  -webkit-transform: rotate(0) translate(200px) rotate(0);
+  -moz-transform: rotate(0) translate(200px) rotate(0);
+  -ms-transform: rotate(0) translate(200px) rotate(0);
+  -o-transform: rotate(0) translate(200px) rotate(0);
+  filter: blur(90px);
+  opacity: 0.4;
+  -webkit-filter: blur(50px);
+  position: absolute;
+}
+
+
+.animated .five{
+  border-radius: 100%;
+  width: 900px;
+  height: 700px;
+  margin: auto;
+  bottom: 0;
+  right: 90;
+  background-color: #5f2e8c;
+  animation: flyPlus 65s linear infinite;
+  -webkit-animation: flyPlus 34s linear infinite;
+  transform: rotate(0) translate(400px) rotate(0);
+  -webkit-transform: rotate(0) translate(400px) rotate(0);
+  -moz-transform: rotate(0) translate(400px) rotate(0);
+  -ms-transform: rotate(0) translate(200px) rotate(0);
+  -o-transform: rotate(0) translate(200px) rotate(0);
+  filter: blur(90px);
+  opacity: 0.4;
+  -webkit-filter: blur(50px);
+}
+
+
+.animated .four {
+  border-radius: 100%;
+  width: 900px;
+  height: 980px;
+  bottom: -90px;
+  right: -100px;
+  background-color: #5f20b8;
+  animation: flyPlus 10s linear infinite;
+  -webkit-animation: flyPlus 10s linear infinite;
+  transform: rotate(0) translate(200px) rotate(0);
+  -webkit-transform: rotate(0) translate(200px) rotate(0);
+  -moz-transform: rotate(0) translate(200px) rotate(0);
+  -ms-transform: rotate(0) translate(200px) rotate(0);
+  -o-transform: rotate(0) translate(200px) rotate(0);
+  filter: blur(90px);
+  opacity: 0.4;
+  -webkit-filter: blur(50px);
+}
+
+.animated .six {
+  width: 700px;
+  height: 400px;
+  background-color: #890abf;
+  bottom: -30px;
+  top:34px;
+  filter: blur(90px);
+  opacity: 0.4;
+  -webkit-filter: blur(50px)
+}
+
+.animated .two-two{
+  width: 900px;
+  height: 500px;
+  background-color: #890abf;
+  bottom: -30px;
+  top:34px;
+  filter: blur(90px);
+  opacity: 0.4;
+  -webkit-filter: blur(50px);
+  position: absolute;
+}
+
+.animated .seven {
+  border-radius: 100%;
+  width: 900px;
+  height: 980px;
+  bottom: -90px;
+  right: -100px;
+  background-color: #5f20b8;
+  animation: flyPlus 10s linear infinite;
+  -webkit-animation: flyPlus 10s linear infinite;
+  transform: rotate(0) translate(200px) rotate(0);
+  -webkit-transform: rotate(0) translate(200px) rotate(0);
+  -moz-transform: rotate(0) translate(200px) rotate(0);
+  -ms-transform: rotate(0) translate(200px) rotate(0);
+  -o-transform: rotate(0) translate(200px) rotate(0);
+  filter: blur(90px);
+  opacity: 0.4;
+  -webkit-filter: blur(50px);
+  position: absolute;
+  top: auto;
+  right: 700px;
+}
