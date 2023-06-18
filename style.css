@@ -58,17 +58,18 @@ body {
   white-space: nowrap;
 }
 
+/*navbar start*/
+
 .nav-container {
   max-width: 1300px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 
 .nav-active {
-  background-color: var(--dark);
+  background-color: rgba(0, 0, 0, 0.797);
   box-shadow: 5px -1px 12px -5px grey;
 }
 
@@ -209,10 +210,12 @@ nav {
   .menu {
     display: flex;
   }
-  nav{
+  nav {
     padding: 16px 32px 20px 32px;
   }
 }
+
+/*navbar end*/
 
 .main-container {
   position: absolute;
@@ -295,8 +298,6 @@ img {
   }
 }
 
-
-
 @keyframes fly {
   100% {
     transform: rotate(2turn) translate(200px) rotate(-2turn);
@@ -304,7 +305,7 @@ img {
     -moz-transform: rotate(2turn) translate(200px) rotate(-2turn);
     -ms-transform: rotate(2turn) translate(200px) rotate(-2turn);
     -o-transform: rotate(2turn) translate(200px) rotate(-2turn);
-}
+  }
 }
 @keyframes flyPlus {
   100% {
@@ -313,16 +314,20 @@ img {
     -moz-transform: rotate(-2turn) translate(200px) rotate(2turn);
     -ms-transform: rotate(-2turn) translate(200px) rotate(2turn);
     -o-transform: rotate(-2turn) translate(200px) rotate(2turn);
+  }
 }
+
+/*Background Animation*/
+
+.animated {
+  width: 100%;
 }
 
 .animated .one {
   border-radius: 100%;
-  width: 900px;
-  height: 900px;
+  width: 2000px;
+  height: 2000px;
   background-color: #a849bd;
-  left: -180px;
-  top: -7000px;
   animation: fly 16s linear infinite;
   transform: rotate(0) translate(89px) rotate(0);
   filter: blur(90px);
@@ -335,10 +340,9 @@ img {
 
 .animated .two {
   border-radius: 100%;
-  width: 1000px;
-  height: 1000px;
+  width: 2000px;
+  height: 2000px;
   bottom: -80px;
-  right: -100px;
   background-color: #4540ab;
   animation: flyPlus 17s linear infinite;
   -webkit-animation: flyPlus 17s linear infinite;
@@ -356,8 +360,8 @@ img {
 
 .animated .three {
   border-radius: 100%;
-  width: 900px;
-  height: 880px;
+  width: 2000px;
+  height: 2000px;
   bottom: -90px;
   right: -100px;
   background-color: #714acc;
@@ -376,8 +380,8 @@ img {
 
 .animated .four {
   border-radius: 100%;
-  width: 1100px;
-  height: 1480px;
+  width: 2000px;
+  height: 1980px;
   bottom: 90px;
   right: 100px;
   background-color: #8d55be;
@@ -398,11 +402,10 @@ img {
 
 .animated .seven {
   border-radius: 100%;
-  width: 900px;
-  height: 980px;
+  width: 2000px;
+  height: 1580px;
   bottom: -90px;
-  right: -100px;
-  background-color: #7943a7;
+  background-color: #c589f9;
   animation: flyPlus 10s linear infinite;
   -webkit-animation: flyPlus 10s linear infinite;
   transform: rotate(0) translate(200px) rotate(0);
@@ -415,16 +418,14 @@ img {
   -webkit-filter: blur(50px);
   position: fixed;
   top: 280px;
-  right:800px;
+  right: 800px;
 }
 
-.animated .six{
+.animated .six {
   border-radius: 100%;
-  width: 900px;
-  height: 900px;
-  background-color: #B084BC;
-  left: -180px;
-  top: -7000px;
+  width: 1500px;
+  height: 1500px;
+  background-color: #b084bc;
   animation: fly 16s linear infinite;
   transform: rotate(0) translate(89px) rotate(0);
   filter: blur(90px);
@@ -434,14 +435,11 @@ img {
   top: 9px;
   left: 900px;
 }
-*/
-.animated .five{
+*/ .animated .five {
   border-radius: 100%;
-  width: 900px;
-  height: 900px;
+  width: 1800px;
+  height: 1600px;
   background-color: #823db0;
-  left: -180px;
-  top: -7000px;
   animation: fly 16s linear infinite;
   transform: rotate(0) translate(89px) rotate(0);
   filter: blur(90px);
@@ -452,6 +450,37 @@ img {
   left: 500px;
 }
 
+@media (max-width: 800px) {
+  .animated {
+    display: grid;
+    max-width: 100%;
+    position: fixed;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .animated .one {
+    position: relative;
+  }
+  .two {
+    position: relative;
+  }
+  .three {
+    position: relative;
+  }
+  .four {
+    position: relative;
+  }
+  .five {
+    position: relative;
+  }
+  .six {
+    position: relative;
+  }
+  .seven {
+    position: relative;
+  }
+}
 /*
 .animated .six {
   width: 700px;
@@ -464,3 +493,25 @@ img {
   -webkit-filter: blur(50px)
 }
 */
+
+/*Scrollbar*/
+
+#body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px transparent;
+  border-radius: 10px;
+  background-color: transparent;
+  z-index: 999;
+}
+
+#body::-webkit-scrollbar {
+  width: 5px;
+  background-color: transparent;
+  z-index: 999;
+}
+
+#body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px transparent;
+  background-color: gainsboro;
+  z-index: 999;
+}
