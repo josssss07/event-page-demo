@@ -320,27 +320,26 @@ img {
   border-radius: 100%;
   width: 900px;
   height: 900px;
-  top: 15;
-  right: 400;
-  background-color: #a960ee;
+  background-color: #a849bd;
   left: -180px;
   top: -7000px;
-  z-index: 1;
-  animation: fly 18s linear infinite;
+  animation: fly 16s linear infinite;
   transform: rotate(0) translate(89px) rotate(0);
   filter: blur(90px);
   opacity: 0.4;
-  -webkit-filter: blur(50px);
-  
+  -webkit-filter: blur(80px);
+  position: fixed;
+  top: 100px;
+  left: 200px;
 }
 
 .animated .two {
   border-radius: 100%;
-  width: 1850px;
-  height: 1650px;
+  width: 1000px;
+  height: 1000px;
   bottom: -80px;
   right: -100px;
-  background-color: #66127f;
+  background-color: #4540ab;
   animation: flyPlus 17s linear infinite;
   -webkit-animation: flyPlus 17s linear infinite;
   transform: rotate(0) translate(200px) rotate(0);
@@ -349,12 +348,11 @@ img {
   -ms-transform: rotate(0) translate(200px) rotate(0);
   -o-transform: rotate(0) translate(200px) rotate(0);
   filter: blur(90px);
-  opacity: 0.4;
+  opacity: 0.6;
   -webkit-filter: blur(50px);
-  position: absolute;
+  position: fixed;
+  right: 800px;
 }
-
-
 
 .animated .three {
   border-radius: 100%;
@@ -362,8 +360,28 @@ img {
   height: 880px;
   bottom: -90px;
   right: -100px;
-  background-color: #5f20b8;
+  background-color: #714acc;
   animation: flyPlus 90s linear infinite;
+  -webkit-animation: flyPlus 13s linear infinite;
+  transform: rotate(0) translate(200px) rotate(0);
+  -webkit-transform: rotate(0) translate(200px) rotate(0);
+  -moz-transform: rotate(0) translate(200px) rotate(0);
+  -ms-transform: rotate(0) translate(200px) rotate(0);
+  -o-transform: rotate(0) translate(200px) rotate(0);
+  filter: blur(90px);
+  opacity: 0.4;
+  -webkit-filter: blur(50px);
+  position: fixed;
+}
+
+.animated .four {
+  border-radius: 100%;
+  width: 1100px;
+  height: 1480px;
+  bottom: 90px;
+  right: 100px;
+  background-color: #8d55be;
+  animation: flyPlus 50s linear infinite;
   -webkit-animation: flyPlus 10s linear infinite;
   transform: rotate(0) translate(200px) rotate(0);
   -webkit-transform: rotate(0) translate(200px) rotate(0);
@@ -373,38 +391,18 @@ img {
   filter: blur(90px);
   opacity: 0.4;
   -webkit-filter: blur(50px);
-  position: absolute;
+  position: fixed;
+  top: 250px;
+  left: 500px;
 }
 
-
-.animated .five{
+.animated .seven {
   border-radius: 100%;
-  width: 1900px;
-  height: 1700px;
-  margin: auto;
-  bottom: 0;
-  right: 90;
-  background-color: #5f2e8c;
-  animation: flyPlus 65s linear infinite;
-  -webkit-animation: flyPlus 34s linear infinite;
-  transform: rotate(0) translate(400px) rotate(0);
-  -webkit-transform: rotate(0) translate(400px) rotate(0);
-  -moz-transform: rotate(0) translate(400px) rotate(0);
-  -ms-transform: rotate(0) translate(200px) rotate(0);
-  -o-transform: rotate(0) translate(200px) rotate(0);
-  filter: blur(90px);
-  opacity: 0.4;
-  -webkit-filter: blur(50px);
-}
-
-
-.animated .four {
-  border-radius: 100%;
-  width: 1100px;
-  height: 1980px;
-  bottom: 90px;
-  right: 100px;
-  background-color: #5f20b8;
+  width: 900px;
+  height: 980px;
+  bottom: -90px;
+  right: -100px;
+  background-color: #7943a7;
   animation: flyPlus 10s linear infinite;
   -webkit-animation: flyPlus 10s linear infinite;
   transform: rotate(0) translate(200px) rotate(0);
@@ -415,7 +413,45 @@ img {
   filter: blur(90px);
   opacity: 0.4;
   -webkit-filter: blur(50px);
+  position: fixed;
+  top: 280px;
+  right:800px;
 }
+
+.animated .six{
+  border-radius: 100%;
+  width: 900px;
+  height: 900px;
+  background-color: #B084BC;
+  left: -180px;
+  top: -7000px;
+  animation: fly 16s linear infinite;
+  transform: rotate(0) translate(89px) rotate(0);
+  filter: blur(90px);
+  opacity: 0.4;
+  -webkit-filter: blur(80px);
+  position: fixed;
+  top: 9px;
+  left: 900px;
+}
+*/
+.animated .five{
+  border-radius: 100%;
+  width: 900px;
+  height: 900px;
+  background-color: #823db0;
+  left: -180px;
+  top: -7000px;
+  animation: fly 16s linear infinite;
+  transform: rotate(0) translate(89px) rotate(0);
+  filter: blur(90px);
+  opacity: 0.4;
+  -webkit-filter: blur(80px);
+  position: fixed;
+  top: 1px;
+  left: 500px;
+}
+
 /*
 .animated .six {
   width: 700px;
@@ -428,36 +464,3 @@ img {
   -webkit-filter: blur(50px)
 }
 */
-.animated .two-two{
-  width: 900px;
-  height: 500px;
-  background-color: #890abf;
-  bottom: -30px;
-  top:34px;
-  filter: blur(90px);
-  opacity: 0.4;
-  -webkit-filter: blur(50px);
-  position: absolute;
-}
-
-.animated .seven {
-  border-radius: 100%;
-  width: 900px;
-  height: 980px;
-  bottom: -90px;
-  right: -100px;
-  background-color: #5f20b8;
-  animation: flyPlus 10s linear infinite;
-  -webkit-animation: flyPlus 10s linear infinite;
-  transform: rotate(0) translate(200px) rotate(0);
-  -webkit-transform: rotate(0) translate(200px) rotate(0);
-  -moz-transform: rotate(0) translate(200px) rotate(0);
-  -ms-transform: rotate(0) translate(200px) rotate(0);
-  -o-transform: rotate(0) translate(200px) rotate(0);
-  filter: blur(90px);
-  opacity: 0.4;
-  -webkit-filter: blur(50px);
-  position: absolute;
-  top: auto;
-  right: 700px;
-}
