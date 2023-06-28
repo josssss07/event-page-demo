@@ -579,9 +579,8 @@ nav {
   .eventCard {
     margin: 20px 0;
     width: 70%;
-    filter: blur(60px);
-    filter: drop-shadow(31px);
-  }
+    
+      }
 
   .eventCard h2 {
     font-family: "Myriad Pro Regular", serif;
