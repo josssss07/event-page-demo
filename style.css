@@ -530,7 +530,7 @@ nav {
   color: white;
   width: 300px;
   height: auto;
-  background-image: linear-gradient(to right, #FF6F91 10%, #FF9671 90%);
+  background-image: linear-gradient(to left, #C92159 10%, #A93379 90%);
   outline: 1px solid #000000;
   box-shadow: 0px 0px 50px #000000c1;
   border-radius: 15px;
