@@ -147,3 +147,126 @@
   box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
   transform: translateY(0);
 }
+
+/*Department Pages*/
+
+.main-container .deptHeader {
+  width: 100%;
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+.main-container .deptHeader h1 {
+  font-family: "Myriad Pro Regular", serif;
+  color: white;
+  font-weight: 400;
+  font-size: 2rem;
+  /* height: 50px; */
+  z-index: 99;
+}
+
+.main-container .deptHeader .deptIcon {
+  border-radius: 0.5rem;
+  width: 150px;
+  height: auto;
+  object-fit: cover;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.event-card-row {
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.eventCard {
+  color: white;
+  width: 300px;
+  height: auto;
+  background-image: linear-gradient(to left, #C92159 10%, #A93379 90%);
+  outline: 1px solid #000000;
+  box-shadow: 0px 0px 50px #000000c1;
+  border-radius: 15px;
+  color: #302c77;
+  padding: 30px;
+}
+
+
+.eventCard h2 {
+  font-family: "Myriad Pro Regular", serif;
+  font-weight: 400;
+  font-size: 2rem;
+  margin: 0;
+  margin-bottom: 10px;
+  text-align: center;
+  color: white;
+}
+
+.eventCard .eventDesc {
+  font-family: "Helvetica", serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+  margin: 0;
+  margin-bottom: 10px;
+  text-align: left;
+  color: white;
+}
+
+.eventCard .eventDetails {
+  font-family: "Helvetica", serif;
+  font-weight: 400;
+  font-size: 1rem;
+  margin: 0;
+  margin-bottom: 10px;
+  text-align: left;
+  line-height: 2;
+  color: white;
+}
+
+@media (max-width: 1300px) {
+  .event-card-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .eventCard {
+    margin: 20px 0;
+    width: 70%;
+    
+      }
+
+  .eventCard h2 {
+    font-family: "Myriad Pro Regular", serif;
+    font-weight: 400;
+    font-size: 2rem;
+    margin: 0;
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+  }
+
+  .eventCard .eventDesc {
+    font-family: "Helvetica", serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    margin: 0;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+
+  .eventCard .eventDetails {
+    font-family: "Helvetica", serif;
+    font-weight: 400;
+    font-size: 1rem;
+    margin: 0;
+    margin-bottom: 10px;
+    text-align: left;
+    line-height: 2;
+  }
+}
