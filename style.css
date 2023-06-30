@@ -527,16 +527,17 @@ nav {
 }
 
 .eventCard {
+  color: white;
   width: 300px;
   height: auto;
-  background: rgba(255, 255, 255, 0.951);
-  outline: 5px solid #302c77;
-  outline-offset: -10px;
+  background-image: linear-gradient(to left, #C92159 10%, #A93379 90%);
+  outline: 1px solid #000000;
   box-shadow: 0px 0px 50px #000000c1;
-  border-radius: 20px;
+  border-radius: 15px;
   color: #302c77;
   padding: 30px;
 }
+
 
 .eventCard h2 {
   font-family: "Myriad Pro Regular", serif;
@@ -545,6 +546,7 @@ nav {
   margin: 0;
   margin-bottom: 10px;
   text-align: center;
+  color: white;
 }
 
 .eventCard .eventDesc {
@@ -554,6 +556,7 @@ nav {
   margin: 0;
   margin-bottom: 10px;
   text-align: left;
+  color: white;
 }
 
 .eventCard .eventDetails {
@@ -564,6 +567,7 @@ nav {
   margin-bottom: 10px;
   text-align: left;
   line-height: 2;
+  color: white;
 }
 
 @media (max-width: 1300px) {
@@ -575,7 +579,8 @@ nav {
   .eventCard {
     margin: 20px 0;
     width: 70%;
-  }
+    
+      }
 
   .eventCard h2 {
     font-family: "Myriad Pro Regular", serif;
@@ -584,6 +589,7 @@ nav {
     margin: 0;
     margin-bottom: 10px;
     text-align: center;
+    color: white;
   }
 
   .eventCard .eventDesc {
