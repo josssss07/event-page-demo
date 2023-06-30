@@ -32,6 +32,7 @@
   color: white;
   font-weight: 400;
   font-size: 2rem;
+  margin: 0.5rem 0;
   /* height: 50px; */
   z-index: 99;
 }
@@ -44,13 +45,13 @@
   text-align: center;
   margin: auto;
 }
+
 .deptCard .main .deptIcon {
   border-radius: 0.5rem;
-  width: 100px;
+  width: 130px;
   height: auto;
   object-fit: cover;
-  margin: auto;
-  filter: invert();
+  margin: 0px auto;
 }
 .deptCard .main .description {
   z-index: 99;
