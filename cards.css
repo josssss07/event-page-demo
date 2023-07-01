@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
 .dept-card-container {
   display: flex;
   flex-direction: column;
@@ -124,7 +126,7 @@
   padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
   position: relative;
   text-decoration: none;
-  transition: all 250ms;
+  transition: all 1s;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
@@ -132,20 +134,8 @@
   width: 200px;
 }
 
-.button-5:hover,
-.button-5:focus {
-  background-color: #fb8332;
-  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
-}
-
-.button-5:hover {
-  transform: translateY(-1px);
-}
-
-.button-5:active {
-  background-color: #c85000;
-  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
-  transform: translateY(0);
+.dept-card-container .deptCard .main button:hover {
+  background-color: #f220b7;
 }
 
 /*Department Pages*/
@@ -202,9 +192,9 @@
 .eventCard h2 {
   font-family: "Myriad Pro Regular", serif;
   font-weight: 400;
-  font-size: 2rem;
+  font-size: 2.1rem;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   text-align: center;
   color: white;
 }
